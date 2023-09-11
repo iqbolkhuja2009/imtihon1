@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1550px;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0px;
+  }
+  .nav .logo {
+    width: 400px;
+  }
+  .nav .nav__link ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  .nav .nav__link ul a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 100% */
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .header {
+    background-image: url(../images/Oval.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 15px;
+    width: 1111px;
+    background-size: 100%;
+    margin: 0 auto;
+    height: 640px;
+    padding: 0px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+  }
+  .header h1 {
+    color: #fff;
+    align-items: center;
+    display: flex;
+    width: 360px;
+    height: 165px;
+  }
+  .header p {
+    color: #fff;
+    align-items: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    width: 360px;
+    height: 85px;
+  }
+  .header .btn {
+    background: #fff;
+    flex-shrink: 0;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin-top: 20px;
+  }
+  .header .btn:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .web {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-top: 50px;
+  }
+  .web .mainImgOne {
+    position: relative;
+  }
+  .web .mainImgOne h1 {
+    position: absolute;
+    top: 280px;
+    color: #fff;
+    text-align: center;
+    left: 150px;
+  }
+  .web .mainImgTwo {
+    position: relative;
+  }
+  .web .mainImgTwo h1 {
+    position: absolute;
+    top: 80px;
+    color: #fff;
+    text-align: center;
+    left: 150px;
+  }
+  .web .mainImgThree {
+    position: relative;
+  }
+  .web .mainImgThree h1 {
+    position: absolute;
+    top: 80px;
+    color: #fff;
+    text-align: center;
+    left: 50px;
+  }
+  .web .groupImg {
+    width: 350px;
+    text-align: center;
+    height: 412px;
+    top: 1755px;
+  }
+  .web .designer {
+    width: 350px;
+    text-align: center;
+    height: 412px;
+    top: 1755px;
+  }
+  .web .share {
+    width: 350px;
+    text-align: center;
+    height: 412px;
+    top: 1755px;
+  }
+  .web .work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  .web .main__img__png {
+    background-image: url(../images/Group\ 28.png);
+    background-repeat: no-repeat;
+    width: 1111px;
+    height: 292px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: -50px;
+  }
+  .web .main__img__png div {
+    width: 550px;
+    color: #fff;
+  }
+  .web .main__img__png button {
+    width: 152px;
+    height: 56px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+  }
+  .web .main__img__png button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .footer {
+    background-color: #000;
+    color: #fff;
+    padding-top: 100px;
+  }
+  .footer .footerMain ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 20px;
+    justify-content: space-around;
+    border-top: 1px solid #fff;
+    padding: 20px;
+    list-style: none;
+  }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,139 @@
+.form {
+}
+.form-container {
+  display: flex;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  border-radius: 15px;
+  background-color: $primary-peach-color;
+  justify-content: space-between;
+}
+.container {
+}
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  width: 100%;
+  max-width: 445px;
+}
+.form_h1 {
+  color: $primary-white-color;
+  font-family: $main-ff;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px; /* 100% */
+}
+
+.form_p {
+  color: $primary-white-color;
+  font-family: $main-ff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.form_con {
+  display: flex;
+  flex-direction: column;
+}
+.form_form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+.form_input {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid $primary-white-color;
+  width: 380px;
+  background-color: inherit;
+  height: 38px;
+  color: $primary-white-color;
+  font-family: $main-ff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 173.333% */
+}
+.fomr_message {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid $primary-white-color;
+  width: 380px;
+  height: 102px;
+  background-color: inherit;
+  color: $primary-white-color;
+  font-family: $main-ff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 173.333% */
+}
+.btn {
+}
+.btn-dark {
+}
+.btn-form {
+  border: 0px;
+  position: relative;
+  left: 140px;
+}
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-content {
+    width: 100%;
+    max-width: 573px;
+  }
+  .form_input {
+    width: 573px;
+  }
+  .fomr_message {
+    width: 573px;
+  }
+  .btn-form {
+    position: relative;
+    left: 235px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .form-content {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .form_h1 {
+    font-size: 32px;
+  }
+  .form_p {
+    font-size: 15px;
+  }
+  .form_input {
+    width: 327px;
+  }
+  .fomr_message {
+    width: 327px;
+  }
+  .btn-form {
+    position: relative;
+    left: -20px;
+  }
+}

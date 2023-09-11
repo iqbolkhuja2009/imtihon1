@@ -1,0 +1,28 @@
+.btn {
+  padding: 1.8rem 2.5rem 1.6rem 2.4rem;
+  border-radius: 8px;
+  font-family: $main-ff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.btn-dark {
+  background-color: $primary-white-color;
+  color: $secondary-gdark-grey-color;
+  &:hover {
+    background-color: $primary-black-color;
+  }
+}
+
+.btn-light {
+  background-color: $primary-white-color;
+  color: $secondary-light-peach-color;
+  &:hover {
+    background-color: $primary-white-color;
+  }
+}

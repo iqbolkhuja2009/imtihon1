@@ -1,0 +1,217 @@
+.webs {
+}
+.webs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  gap: 2.4rem;
+  border-radius: 15px;
+  background-color: $primary-peach-color;
+}
+.container {
+}
+.webs__h2 {
+  color: $primary-white-color;
+  text-align: center;
+  font-family: $main-ff;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px; /* 100% */
+}
+.webs__p {
+  color: $primary-white-color;
+  text-align: center;
+  font-family: $main-ff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  width: 100%;
+  max-width: 400px;
+}
+
+// trans start trans ul boshlandi
+
+.trans {
+}
+.trans-container {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.container {
+}
+.trans_ul {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 3.2rem;
+  column-gap: 3rem;
+}
+.trans_li {
+  width: 100%;
+  max-width: 350px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.trans_div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+  border-radius: 0px 0px 15px 15px;
+  background-color: $trans-color;
+  &:hover {
+    background-color: $primary-peach-color;
+  }
+  &:hover .trans_li_h4 {
+    color: $primary-white-color;
+  }
+  &:hover .trans_li_p {
+    color: $primary-white-color;
+  }
+}
+
+.trans_li_img {
+}
+.trans_li_h4 {
+  margin-top: 2rem;
+  color: $primary-peach-color;
+  text-align: center;
+  font-family: $main-ff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 130% */
+  letter-spacing: 5px;
+}
+.trans_li_p {
+  margin-top: 1.6rem;
+  color: $secondary-gdark-grey-color;
+  text-align: center;
+  font-family: $main-ff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  width: 100%;
+  max-width: 286px;
+}
+
+.des {
+}
+.des-container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.container {
+}
+.des_img {
+}
+.des_im {
+}
+
+// @media max-width: 768px start
+
+@media screen and (max-width: 768px) {
+  .trans_ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+  .trans_li_img {
+    border-radius: 15px 0px 0px 15px;
+  }
+  .trans_li {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 700px;
+  }
+  .trans_div {
+    height: 320px;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .des-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+  }
+  .des_im {
+    width: 600px;
+    height: 200px;
+    border-radius: 15px;
+  }
+}
+
+// @media max-width:670px start
+
+@media screen and (max-width: 670px) {
+  .webs__h2 {
+    font-size: 32px;
+  }
+  .webs__p {
+    font-size: 15px;
+  }
+
+  .trans_ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .trans_li {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: 0.3s;
+  }
+  .trans_li_img {
+    border-radius: 15px 15px 0px 0px;
+  }
+  .trans_div {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+    border-radius: 0px 0px 15px 15px;
+    background-color: $trans-color;
+    &:hover {
+      background-color: $primary-peach-color;
+    }
+    &:hover .trans_li_h4 {
+      color: $primary-white-color;
+    }
+    &:hover .trans_li_p {
+      color: $primary-white-color;
+    }
+  }
+  .des_im {
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    border-radius: 15px;
+  }
+}

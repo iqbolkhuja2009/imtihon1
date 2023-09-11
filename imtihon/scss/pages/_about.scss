@@ -1,0 +1,251 @@
+.us {
+}
+.us-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $primary-peach-color;
+  border-radius: 1.5rem;
+}
+.container {
+}
+.us_content {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  width: 100%;
+  max-width: 458px;
+}
+.us_h1 {
+  color: $primary-white-color;
+  font-family: $main-ff;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px; /* 100% */
+}
+.us_p {
+  color: $primary-white-color;
+  font-family: $main-ff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+.us_img {
+  position: relative;
+  left: 50px;
+}
+
+.world {
+}
+.world-container {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $trans-color;
+  border-radius: 15px;
+}
+.container {
+}
+.world_img {
+  position: relative;
+  left: -50px;
+}
+.world_content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 100%;
+  max-width: 445px;
+}
+.world_h1 {
+  color: $primary-peach-color;
+  font-family: $main-ff;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px; /* 120% */
+}
+.world_p {
+  color: $secondary-gdark-grey-color;
+  font-family: $main-ff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.canada {
+}
+.canada-container {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.container {
+}
+.canada_ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.canada_li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.canada_img {
+  width: 202px;
+  height: 202px;
+}
+.canada_h4 {
+  margin-top: 4.8rem;
+  color: $secondary-gdark-grey-color;
+  text-align: center;
+  font-family: $main-ff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 130% */
+  letter-spacing: 5px;
+  margin-bottom: 3rem;
+}
+
+.deal {
+}
+.container {
+}
+.deal-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6rem;
+  background-color: $trans-color;
+  border-radius: 15px;
+}
+.deal_content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 445px;
+}
+.deal_h1 {
+  color: $primary-peach-color;
+  font-family: $main-ff;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px; /* 120% */
+}
+.deal_p {
+  color: $secondary-gdark-grey-color;
+  font-family: $main-ff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+.deal_img {
+  position: relative;
+  right: -50px;
+}
+
+@media screen and (max-width: 768px) {
+  .us-container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 6rem;
+  }
+  .us_img {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+  }
+  .us_content {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .world-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 6rem;
+  }
+  .world_img {
+    width: 100%;
+    height: 320px;
+    border-radius: 15px;
+    left: 5px;
+  }
+  .world_content {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 572px;
+    text-align: center;
+  }
+  .canada_ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+  }
+
+  .deal-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 6rem;
+  }
+  .deal_img {
+    width: 100%;
+    height: 320px;
+    border-radius: 15px;
+    left: 5px;
+  }
+  .deal_content {
+    margin-top: 6rem;
+    width: 100%;
+    max-width: 572px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+  }
+  .deal_p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .us_h1 {
+    font-size: 3.2rem;
+  }
+  .us_p {
+    font-size: 1.5rem;
+  }
+  .world_h1 {
+    font-size: 32px;
+  }
+  .world_p {
+    font-size: 15px;
+  }
+  .deal_h1 {
+    font-size: 32px;
+  }
+  .deal_p {
+    font-size: 15px;
+  }
+}

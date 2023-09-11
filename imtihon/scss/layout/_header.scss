@@ -1,0 +1,124 @@
+.header {
+}
+.container {
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+}
+.site-logo-link {
+  margin-right: auto;
+  .site-logo {
+    width: 19.6rem;
+    height: 2.4rem;
+  }
+}
+
+.header_lists {
+  .header_ul {
+    display: flex;
+    gap: 4.2rem;
+
+    .header_li {
+      font-family: $main-ff;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 14px; /* 100% */
+      letter-spacing: 2px;
+      position: relative;
+
+      &::before {
+        content: "";
+        bottom: 0;
+        position: absolute;
+        width: 0;
+        background-color: rgb(255, 0, 0);
+        height: 1px;
+        display: inline-block;
+        transition: 0.2s;
+      }
+      &:hover::before {
+        width: 100%;
+      }
+      .header_li_a {
+        color: $secondary-gdark-grey-color;
+      }
+    }
+  }
+}
+
+.header_a {
+  display: none;
+  position: relative;
+}
+.header_kateg_logo {
+  width: 2.4rem;
+  height: 2rem;
+}
+.header_kateg_logos {
+  display: none;
+}
+
+.header_uls {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  width: 100%;
+  max-width: 550px;
+  background-color: $primary-black-color;
+  position: absolute;
+  bottom: 200px;
+  padding-top: 2.8rem;
+  padding-bottom: 4.8rem;
+  padding-left: 2.4rem;
+  display: none;
+  transition: 0.3s;
+}
+.header_lis {
+}
+.header_li_as {
+  color: $primary-white-color;
+  font-family: $main-ff;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 104.167% */
+  letter-spacing: 2px;
+}
+
+// @media 768px start
+
+@media screen and (max-width: 768px) {
+  .site-logo {
+    width: 15.7rem;
+    height: 2.7rem;
+  }
+}
+
+// @media 670px start
+
+@media screen and (max-width: 670px) {
+  .header-container {
+    padding-top: 3.5rem;
+    padding-bottom: 3.4rem;
+  }
+  .header_a {
+    display: block;
+  }
+  .header_li {
+    display: none;
+  }
+
+  .header_a:hover .header_kateg_logos {
+    display: block;
+  }
+  .header_a:hover .header_kateg_logo {
+    display: none;
+  }
+  .header_a:hover .header_kateg_logos .header_uls {
+    display: block;
+  }
+}
